@@ -36,8 +36,8 @@ function CreateFurniture() {
     };
 
     return (
-        <div className="column align-items">
-            <h2>Ajouter un meuble</h2>
+        <div className="margin-auto column align-items">
+            <h1 className="title">Ajouter un meuble</h1>
             <form className="form-field align-items-start" onSubmit={createfurniture}>
                 <p className="lightgrey input-title">Nom du meuble</p>
                 <input value={name} className="width-fill-available" type="text" onChange={(e) => setName(e.target.value)}/>

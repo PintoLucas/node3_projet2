@@ -20,6 +20,7 @@ function Login() {
                 }),
             });
             let response = await res.json();
+            console.log(response);
             if (res.status === 200) {
                 localStorage.setItem("accountInfos", JSON.stringify(response));
                 navigate('/listfurnitures');
@@ -55,7 +56,7 @@ function Login() {
     };
 
     return (
-        <div className="form-field login-field">
+        <div className="margin-auto form-field login-field">
             <form onSubmit={login} className="column align-items responsive-width-100">
                 <input value={email} type="text" placeholder="Adresse e-mail"
                        onChange={(e) => setEmail(e.target.value)} required/>

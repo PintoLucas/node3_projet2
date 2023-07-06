@@ -23,14 +23,14 @@ function ListFurnitures() {
     }, [])
 
     return (
-        <div className="column align-items responsive-margin-top">
+        <div className="margin-auto column align-items responsive-margin-top">
             <h1 className="title">Liste de meubles</h1>
             <div className="column">
                 {listOfFurnitures.map((furniture, index) => (
-                    <div>
-                    <h2>{furniture.name}</h2>
-                    <p>{furniture.materiaux}</p>
-                    <p>{furniture.categorie}</p>
+                    <div className="furniture-box">
+                    <h2>Nom : {furniture.name}</h2>
+                    <p>Matériaux : {furniture.materiaux}</p>
+                    <p>Catégorie : {furniture.categorie}</p>
                     </div>
                 ))}
             </div>
