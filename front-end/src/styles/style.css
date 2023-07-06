@@ -1,0 +1,103 @@
+form {
+    margin-top: 2rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.reverse-column {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.inline {
+    display: flex;
+    flex-direction: row;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.validate-button {
+    font-size: 17px;
+    padding: 14px 16px;
+    border: 1px solid #202124;
+    border-radius: 5px;
+    background-color: white;
+    margin: 2rem 0 0;
+    width: 362px;
+    cursor: pointer;
+}
+
+hr {
+    width: 50%;
+    margin: 20px 0 20px;
+}
+
+input, textarea, .register-button  {
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    margin: 0.25rem 0;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.login-field  {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-button  {
+    margin: 0;
+    width: 362px;
+    cursor: pointer;
+}
+
+.register-button {
+    color: white;
+    border-color: transparent;
+    background-color: #202124;
+}
+
+input:hover, .register-button:hover {
+    border-color: #202124;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #202124;
+}
+
+.welcome {
+    width: 400px;
+    height: 314px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 1px -1px #0003, 0 1px 1px 0 #00000024, 0 1px 3px 0 #0000001f;
+}

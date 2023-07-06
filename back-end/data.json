@@ -1,0 +1,15 @@
+{
+    "Bois": {
+      "Matériaux": ["frêne", "chêne", "noyer"],
+      "Entreprise": "BBois"
+    },
+    "Fer": {
+      "Matériaux": ["acier", "inox", "aluminium"],
+      "Entreprise": "MetaLo"
+    },
+    "Plastique": {
+      "Matériaux": ["plastique"],
+      "Entreprise": "pPlastique"
+    },
+    "Catégorie": ["Armoire", "Étagère"]
+  }
