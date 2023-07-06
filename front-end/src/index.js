@@ -4,6 +4,7 @@ import Login from "./Login/index";
 import './styles/style.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import ListFurnitures from './ListFurnitures';
+import CreateFurniture from './AddFurniture';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,8 @@ root.render(
               <Route path="/" element={<Login />}>
               </Route>
               <Route path="/listfurnitures" element={<ListFurnitures />}>
+              </Route>
+              <Route path="/addfurniture" element={<CreateFurniture />}>
               </Route>
           </Routes>
       </BrowserRouter>

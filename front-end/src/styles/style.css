@@ -79,7 +79,7 @@ input, textarea, .register-button  {
     background-color: #202124;
 }
 
-input:hover, .register-button:hover {
+input:hover, .register-button:hover, select:hover {
     border-color: #202124;
 }
 
@@ -100,4 +100,58 @@ input:focus {
     padding: 2rem;
     border-radius: 5px;
     box-shadow: 0 2px 1px -1px #0003, 0 1px 1px 0 #00000024, 0 1px 3px 0 #0000001f;
+}
+
+.title {
+    margin: 2rem 0 0;
+}
+
+.lightgrey {
+    color: #4E5166;
+}
+
+.form-field {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 1px -1px #0003, 0 1px 1px 0 #00000024, 0 1px 3px 0 #0000001f;
+}
+
+.align-items-start {
+    align-items: flex-start !important;
+}
+
+.validate-button:hover, .register-button:hover {
+    border-color: #202124;
+    box-shadow: 0 0 10px #202124;
+}
+
+.input-title {
+    margin-bottom: 0;
+}
+
+.input-text {
+    min-height: 50px;
+    height: 80px;
+    min-width: 330px;
+    max-width: 330px;
+    padding: 5px 16px;
+}
+
+.input-text:focus, select:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #202124;
+}
+
+select {
+    margin: 0.25rem 0;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #dddfe2;
 }
