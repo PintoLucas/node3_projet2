@@ -3,7 +3,7 @@ const uniqueValidator = require('mongoose-unique-validator');
 
 const furnituresSchema = mongoose.Schema({
     name : { type: String, unique: true },
-    materiaux: { type: String },
+    materiaux: [{ type: Object }],
     categorie: { type: String }
 });
 

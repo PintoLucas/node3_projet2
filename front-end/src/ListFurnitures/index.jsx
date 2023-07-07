@@ -14,6 +14,7 @@ function ListFurnitures() {
                 })
                 const listFurnitures = await response.json()
                 setListFurniture(listFurnitures)
+                console.log(listFurnitures);
             } catch (err) {
                 console.log(err)
             }
@@ -23,13 +24,15 @@ function ListFurnitures() {
     }, [])
 
     return (
-        <div className="margin-auto column align-items responsive-margin-top">
+        <div className="padding-page margin-auto column align-items">
             <h1 className="title">Liste de meubles</h1>
             <div className="column">
                 {listOfFurnitures.map((furniture, index) => (
                     <div className="furniture-box">
-                    <h2>Nom : {furniture.name}</h2>
-                    <p>Matériaux : {furniture.materiaux}</p>
+                    <h2>{furniture.name}</h2>
+                    <ul>{furniture.materiaux.map((materiau, index) => (
+                        <li>{materiau.name} (quantité : {materiau.quantity})</li>
+                    ))}</ul>
                     <p>Catégorie : {furniture.categorie}</p>
                     </div>
                 ))}

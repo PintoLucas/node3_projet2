@@ -10,6 +10,8 @@ body {
 
 .menu {
     background-color: #F8F6F2;
+    position: fixed;
+    height: calc(100vh - 130px);
     width: 250px;
     padding: 100px 20px 30px;
     left: 0;
@@ -78,6 +80,10 @@ form {
 
 .margin-auto {
     margin: 0 auto;
+}
+
+.padding-page {
+    padding-left: 290px;
 }
 
 .height-100 {
@@ -212,4 +218,15 @@ select {
     width: 300px;
     margin: 1rem 0;
     padding: 0 25px;
+}
+
+.add-materials button {
+    background-color: white;
+    margin: 10px;
+    color: #000000;
+    border: #50C9D9 solid 1px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
 }
